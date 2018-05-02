@@ -8,8 +8,18 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtCity"
+        android:id="@+id/txtTitle"
         android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tell Weather of Current Location"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="1"
@@ -29,11 +39,10 @@
         />
 
     <ImageView
-        android:layout_height="100dp"
-        android:layout_width="100dp"
         android:id="@+id/imageView"
-        android:layout_gravity="center"
-        />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/txtDescription"
@@ -84,6 +93,7 @@
         android:textSize="30sp"
         android:gravity="center"
         />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"

@@ -36,7 +36,7 @@ import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 public class MainActivity extends AppCompatActivity implements LocationListener {
 
 
-    TextView txtCity, txtLastUpdate, txtDescription, txtHumidity, txtCelsius, txtTime, txtLat;
+    TextView txtCity, txtLastUpdate, txtDescription, txtHumidity, txtCelsius, txtTime, txtLat, txtTitle;
     ImageView imageView;
 
     LocationManager locationManager;
@@ -60,7 +60,18 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         txtCelsius = (TextView) findViewById(R.id.txtCelsius);
         txtTime = (TextView) findViewById(R.id.txtTime);
         txtLat = (TextView) findViewById(R.id.txtLat);
+        txtTitle = (TextView) findViewById(R.id.txtTitle);
         imageView = (ImageView) findViewById(R.id.imageView);
+
+        txtTitle.setTextColor(Color.BLUE);
+        txtLat.setTextColor(Color.BLACK);
+        txtTime.setTextColor(Color.BLACK);
+        txtCelsius.setTextColor(Color.BLACK);
+        txtHumidity.setTextColor(Color.BLACK);
+        txtDescription.setTextColor(Color.BLACK);
+        txtLastUpdate.setTextColor(Color.BLACK);
+        txtCity.setTextColor(Color.BLACK);
+
 
 
         //get coordinates
